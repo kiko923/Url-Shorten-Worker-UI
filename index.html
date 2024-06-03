@@ -70,18 +70,18 @@
 </head>
 <body>
   <div class="card">
-    <h5 class="card-header">🎁 Shorten your URLs !</h5>
+    <h5 class="card-header">🎁</h5>
     <div class="card-body">
-      <h5 class="card-title">Please enter the long URL to be shortened :</h5>
+      <h5 class="card-title"></h5>
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Example: https://example.com/" id="text">
         <div class="input-group-append">
-          <button class="btn btn-primary" type="button" onclick='shorturl()' id="searchbtn">Shorten it</button>
+          <button class="btn btn-primary" type="button" onclick='shorturl()' id="searchbtn">Get it</button>
         </div>
       </div>    
-      <div class="card-text">
-        <a href="https://github.com/xyTom/Url-Shorten-Worker/" target="_self">Fork me on GitHub</a>
-      </div>
+      <!--<div class="card-text">-->
+      <!--  <a href="https://github.com/xyTom/Url-Shorten-Worker/" target="_self">Fork me on GitHub</a>-->
+      <!--</div>-->
       <p id="notice"></p>             
     </div>
   </div>
@@ -96,12 +96,16 @@
         </div>
         <div class="modal-body" id="result">No result</div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">Copy</button>
+          <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="Copied!">
+              <i class="layui-icon layui-icon-face-smile" style="font-size: 30px; color: #1E9FFF;"></i>
+              </button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
         </div>
       </div>
     </div>
-  </div>         
+  </div>
+  <link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/MCCRNFC-SNLoong/LayuiCdn/layui-v2.9.10/css/layui.css"/>
+  <script src="https://jsd.onmicrosoft.cn/gh/MCCRNFC-SNLoong/LayuiCdn/layui-v2.6.8/layui.js"></script>
   <script src="https://gcore.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script src="https://gcore.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://gcore.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
